@@ -13,16 +13,18 @@ console.log(line3);
 
 let DLS = chalk.red('')
 function deeya(cheese) {
-if (moment().cheese() === true){
+if (cheese === true){
     DLS += 'is'
   }
   else { DLS += "is not"}
 }
+let isDST = moment().isDST()
 deeya(isDST)
 
 const line4 =`It ${DLS} day lights savings time`
 console.log(line4);
 
+let isValid = moment().isValid()
 deeya(isValid)
 const line5 =`It ${DLS} not "a leap year"`
 console.log(line5);
