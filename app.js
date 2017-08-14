@@ -2,10 +2,27 @@ const moment = require('moment');
 const chalk = require ('chalk');
 
 
-const opp= "It is"
-const line1 = opp+  Tuesday, July 18th 2017, 3:07:48
-const line2 = opp+ "the" 199th "day of the year"
-const line3 = opp + 599 seconds into the day
-const line4 = "It" + is+ "day lights savings time"
-const line5 = opp+ not "a leap year"
-});
+const answer1= moment().format()
+console.log(answer1);
+const line1 =`It is ${chalk.blue(moment().format('dddd, MMM, do YYYY LTS'))}`
+console.log(line1);
+const line2 =`It is the ${chalk.blue(moment().format('DDDo'))} day of the year`
+console.log(line2);
+const line3 =`It is ${moment().format('s')} seconds into the day`
+console.log(line3);
+
+let DLS = chalk.red('')
+function deeya(cheese) {
+if (moment().cheese() === true){
+    DLS += 'is'
+  }
+  else { DLS += "is not"}
+}
+deeya(isDST)
+
+const line4 =`It ${DLS} day lights savings time`
+console.log(line4);
+
+deeya(isValid)
+const line5 =`It ${DLS} not "a leap year"`
+console.log(line5);
